@@ -1,0 +1,15 @@
+services:
+  odoo:
+    image: odoo:17
+    container_name: odoo_web
+    restart: unless-stopped
+    ports:
+      - "8069:8069"
+    environment:
+      HOST: ${ODOO_DB_HOST}
+      PORT: ${ODOO_DB_PORT}
+      USER: ${ODOO_DB_USER}
+      PASSWORD: ${ODOO_DB_PASSWORD}
+    volumes:
+      - ./custom_addons:/mnt/extra-addons
+      - ./config:/etc/odoo
