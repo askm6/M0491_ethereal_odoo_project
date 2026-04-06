@@ -21,7 +21,7 @@ Configurar un entorno compartido de Odoo para que varios miembros del grupo pued
 1. Clonar el repositorio
 2. Crear un archivo `.env` a partir de `.env.example`
 3. Rellenar las credenciales necesarias
-4. Ejecutar:
+4. Ejecutar: 
 
 ```bash
 docker compose up
