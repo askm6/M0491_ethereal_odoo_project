@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <menuitem
+        id="menu_ethereal_operations_root"
+        name="ETHEREAL"
+        sequence="10"/>
+
+    <menuitem
+        id="menu_ethereal_customer_followups"
+        name="Seguimiento de clientes"
+        parent="menu_ethereal_operations_root"
+        action="action_ethereal_customer_followup"
+        sequence="10"/>
+
+    <menuitem
+        id="menu_ethereal_jewelry_quality_reviews"
+        name="Revisiones de calidad de joyas"
+        parent="menu_ethereal_operations_root"
+        action="action_ethereal_jewelry_quality_review"
+        sequence="20"/>
+
+    <menuitem
+        id="menu_ethereal_international_order_checks"
+        name="Control de pedidos internacionales"
+        parent="menu_ethereal_operations_root"
+        action="action_ethereal_international_order_check"
+        sequence="30"/>
+</odoo>

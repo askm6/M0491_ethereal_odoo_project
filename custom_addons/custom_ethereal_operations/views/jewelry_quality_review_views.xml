@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_ethereal_jewelry_quality_review_tree" model="ir.ui.view">
+        <field name="name">ethereal.jewelry.quality.review.tree</field>
+        <field name="model">ethereal.jewelry.quality.review</field>
+        <field name="arch" type="xml">
+            <tree string="Revisiones de calidad de joyas">
+                <field name="name"/>
+                <field name="product_id"/>
+                <field name="review_date"/>
+                <field name="material"/>
+                <field name="quality_status"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_ethereal_jewelry_quality_review_form" model="ir.ui.view">
+        <field name="name">ethereal.jewelry.quality.review.form</field>
+        <field name="model">ethereal.jewelry.quality.review</field>
+        <field name="arch" type="xml">
+            <form string="Revisión de calidad de joya">
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="name"/>
+                            <field name="product_id"/>
+                            <field name="review_date"/>
+                        </group>
+                        <group>
+                            <field name="material"/>
+                            <field name="quality_status"/>
+                        </group>
+                    </group>
+                    <group>
+                        <field name="observations"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_ethereal_jewelry_quality_review" model="ir.actions.act_window">
+        <field name="name">Revisiones de calidad de joyas</field>
+        <field name="res_model">ethereal.jewelry.quality.review</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+</odoo>
