@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_ethereal_customer_followup_tree" model="ir.ui.view">
+        <field name="name">ethereal.customer.followup.tree</field>
+        <field name="model">ethereal.customer.followup</field>
+        <field name="arch" type="xml">
+            <tree string="Seguimiento de clientes">
+                <field name="name"/>
+                <field name="partner_id"/>
+                <field name="followup_date"/>
+                <field name="channel"/>
+                <field name="priority"/>
+                <field name="state"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_ethereal_customer_followup_form" model="ir.ui.view">
+        <field name="name">ethereal.customer.followup.form</field>
+        <field name="model">ethereal.customer.followup</field>
+        <field name="arch" type="xml">
+            <form string="Seguimiento de cliente">
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="name"/>
+                            <field name="partner_id"/>
+                            <field name="followup_date"/>
+                        </group>
+                        <group>
+                            <field name="channel"/>
+                            <field name="priority"/>
+                            <field name="state"/>
+                        </group>
+                    </group>
+                    <group>
+                        <field name="notes"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_ethereal_customer_followup" model="ir.actions.act_window">
+        <field name="name">Seguimiento de clientes</field>
+        <field name="res_model">ethereal.customer.followup</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+</odoo>

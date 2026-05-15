@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_ethereal_customer_followup,access.ethereal.customer.followup,model_ethereal_customer_followup,base.group_user,1,1,1,1
+access_ethereal_jewelry_quality_review,access.ethereal.jewelry.quality.review,model_ethereal_jewelry_quality_review,base.group_user,1,1,1,1
+access_ethereal_international_order_check,access.ethereal.international.order.check,model_ethereal_international_order_check,base.group_user,1,1,1,1
