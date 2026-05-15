@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_partner_form_twitter_x" model="ir.ui.view">
+        <field name="name">res.partner.form.twitter.x</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="arch" type="xml">
+            <field name="website" position="after">
+                <field name="twitter_x_url"
+                       placeholder="https://x.com/usuario"
+                       widget="url"/>
+            </field>
+        </field>
+    </record>
+</odoo>
